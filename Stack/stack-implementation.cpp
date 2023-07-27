@@ -59,6 +59,8 @@ int main()
 
             case 3:
             exit(0);
+            default:
+            cout << "Invalid option.\n";
         }
     }
 
