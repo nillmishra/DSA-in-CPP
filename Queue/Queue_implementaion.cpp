@@ -7,60 +7,15 @@ int Q[5], f = -1, r = -1;
 void Q_ins(int);
 int Q_del();
 void display()
-{
-    for (int i = r; i>0; i--)
-    {
-        cout << Q[i] << endl;
-    }
-}
-
-void Q_ins(int o)
-{
-    if (r == mQ - 1)
-    {
-        cout << "Overflow" << endl;
-    }
-    else
-    {
-        if (r < 0)
-        {
-            r = 0;
-            f = 0; // Initialize front index when inserting the first element
-        }
-        r = r + 1;
-        Q[r] = o;
-    }
-    display();
-}
-
-int Q_del()
-{
-    if (f < 0)
-    {
-        cout << "Underflow" << endl;
-        return -1; // Return -1 to indicate underflow
-    }
-    else
-    {
-        int val = Q[f];
-        if (f == r)
-        {
-            f = -1;
-            r = -1;
-        }
-        else
-        {
-            f = f + 1;
-        }
-        return val;
-    }
-    display();
+{   int i;
+    for (i = r;i>0;i--)
+    cout << Q[i] << endl;
 }
 
 int main()
 {
     int op, it, v;
-    while (true) // Changed while condition from while(100) to while(true)
+    while (10) // Changed while condition from while(100) to while(true)
     {
         cout << "1. Q_ins\n2. Q_del\n3. Exit\n";
         cout << "Enter your option: ";
@@ -75,7 +30,7 @@ int main()
 
         case 2:
             v = Q_del();
-            if (v >= 0)
+            if (v >=0)
             {
                 cout << v << " is deleted\n";
             }
@@ -92,3 +47,46 @@ int main()
     return 0; // Added return statement
 }
 
+void Q_ins(int x)
+{
+    if (r == mQ )
+    {
+        cout << "Overflow" << endl;
+    }
+    else
+    {
+        if (r < 0)
+        {
+            r = 0;
+            f = 0; // Initialize front index when inserting the first element
+        }
+        r = r + 1;
+        Q[r] = x;
+        display();
+    }
+}
+
+int Q_del()
+{
+    int v1 = -999;
+    if (f < 0)
+    {
+        cout << "Underflow" << endl;
+        return v1; // Return -1 to indicate underflow
+    }
+    else
+    {
+        v1 = Q[f];
+        if (f == r)
+        {
+            f = -1;
+            r = -1;
+        }
+        else
+        {
+            f = f + 1;
+            display();
+            return v1;
+        }
+    }
+}
