@@ -10,7 +10,11 @@ int main(){
             cout << " ";
         }
         else if(k< 2*r + 1){
+            if(k==0||k== 2*r || r ==n-1)
             cout <<"*";
+            else{
+            cout<<" ";
+            }
             k++;
         }
         else{
