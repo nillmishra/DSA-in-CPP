@@ -14,4 +14,4 @@ public:
         int answer = prod - sum;
         return answer;
         }
-    };
+    }
