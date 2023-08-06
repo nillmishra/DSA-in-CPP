@@ -18,5 +18,6 @@ using namespace std;
     int arr[]={5,6};
     int size =2;
     inc (arr, size);
+    //addess pass hua hai
     printarray(arr, size);
  }
