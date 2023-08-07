@@ -12,8 +12,8 @@ int main(){
         int element2 = arr[j];
 
             for (int k =j+1; k <arr.size(); k++){
-            if(element1 + element2 + arr[j] == sum){
-                 cout << "triplet Found "<< element1 << " & "<<element2<< "&"<< arr[k] <<endl;
+            if(element1 + element2 + arr[k] == sum){
+                 cout << "triplet Found "<< element1 << " & "<<element2<< " & "<< arr[k] <<endl;
             }
             }
     }
