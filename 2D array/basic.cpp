@@ -11,7 +11,7 @@ int main(){
         cout << brr[j][i] << " ";
     }
     cout << endl;
-    }
+    }  
 
     cout << endl;
     cout <<"column" <<endl;
