@@ -19,6 +19,6 @@ int main(){
     for(int i =0; i<3; i++){
         cout << brr[i][j] << " ";
     }
-    cout << endl;
+    cout << endl;   
     }
 } 
