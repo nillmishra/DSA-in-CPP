@@ -3,7 +3,7 @@
 #include <vector>
 
 using namespace std;
-
+//3 pointer approach
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
