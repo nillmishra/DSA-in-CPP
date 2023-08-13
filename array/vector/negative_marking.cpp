@@ -6,6 +6,7 @@ using namespace std;
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
+        //visited method
         int ans =-1;
         for(int i =0; i< nums.size(); i++){
             int index = abs(nums[i]);
