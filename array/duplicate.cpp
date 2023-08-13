@@ -1,13 +1,33 @@
-#include<iostream>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
 using namespace std;
-int main(){
-    int n, i;
-    cin >> n;
-    int arr[n];
-    for (i = 0; i < n; i++ ){
-        cin >> arr[i];
-    }
-    for (i = 0; i < n-1; i++ ){
-        cout << arr[i]<< " ";
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        for (int i = 0; i <nums.size(); i++){
+            for (int j = i+1; j <nums.size(); j++){
+            if (nums[i]==nums[j])
+            {
+                cout <<"\nThe duplicate number is "<< nums[i] <<endl;
+                break;
+            }
+            }
         }
+        return 0;
+    }
+};
+
+int main(){
+    Solution solution;
+    vector<int> nums = {1, 3, 5, 6, 9, 9};
+    
+    cout << "Before sorting: ";
+    for (int num : nums) {
+        cout << num << " ";
+    }
+    
+    solution.findDuplicate(nums);
+    return 0;
 }
