@@ -8,5 +8,4 @@ int main(){
     auto ans = lower_bound(v.begin(), v.end(), target);
     cout <<"ans is "<< ans - v.begin() << endl;
     return 0;
-
 }
