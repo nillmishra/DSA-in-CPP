@@ -55,7 +55,7 @@ public:
 
 int main() {
     Solution solution;
-    std::vector<int> rotatedArray = {4, 5, 6, 7,8,9, 0, 1, 2};
+    std::vector<int> rotatedArray = {4, 5, 6, 7 ,8, 0, 1, 2};
     int target = 0;
 
     int result = solution.search(rotatedArray, target);
