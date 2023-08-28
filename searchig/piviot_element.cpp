@@ -13,6 +13,7 @@ int findPiviot(vector<int>arr){
         else s = mid+1;
     mid =s+(e-s)/2;
     }
+    return -1;
     }
 int main(){
 vector <int> arr{5,6,7,8,9,2,4,6,8};
