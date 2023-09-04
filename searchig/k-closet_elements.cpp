@@ -15,6 +15,9 @@ vector <int> twoPtrMethod(vector<int>& arr, int k, int x){
         ans.push_back(arr[i]);
     }
     return ans;
+
+    // using stl
+    //return vector<int>(arr.begin()+l, arr.begin()+h+1);
  }
 }
 vector< int> findClosestElements(vector<int>& arr, int k, int x){
