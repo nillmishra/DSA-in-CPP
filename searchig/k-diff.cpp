@@ -1,6 +1,6 @@
 int findPairs(vector<int>&  nums, int k){
     sort(nums.begin(), nums.end());
-    set<pair<int, int>>, ans;
+    set<pair<int, int>> ans;
     int i =0, j =1;
     while(j < nums.size()){
         int diff = nums[j]- nums[i];
