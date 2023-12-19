@@ -6,7 +6,9 @@
         "vector": "cpp",
         "xlocale": "cpp",
         "utility": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "limits": "cpp",
+        "array": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
