@@ -3,7 +3,7 @@ using namespace std;
 #define ms 4
 void push();
 int pop();
-int s[5], t= -1;
+int s[ms], t= -1;
 
 void display()
 {
