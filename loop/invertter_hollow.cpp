@@ -7,10 +7,16 @@ int main(){
     cin >> n;
 
     for(int i =1; i <=n; i++){
-        for(int j  =  i; j <= n ; j++){
+        for(int k = 1; k <= n-i; k++){
+            cout << "  ";
+
+        }
+        for(int j  = 0; j < i; j++){
             cout << "* ";
         }
         cout << endl;
     }
+
+
     return 0;
 }
